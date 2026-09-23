@@ -1,23 +1,184 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIS 3308</title>
+    <title>project01</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght,FILL@100,1&icon_names=kid_star,arrow_back,more_horiz,globe,keep,reply,repeat,bookmark,verified,search,arrow_drop_down">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Welcome to CIS 3308!</h1>
-
-    <img src="temple-logo.png" />
-
-    <h2>Who is your favorite fictional character?</h2>
-
-    <p>usahana</p>
-
-    <h2>What does your fictional character look like?  (Include an image!)</h2>
-
-    <img src="https://shop.sanrio.co.jp/photo/color/us.png"></img>
-
+    <div id="outer">
+      <div id="left">
+        <div id="search"><span class="material-symbols-rounded">search</span>search</div>
+        <div id="temple">
+          <div id="fediverse">temple.social is one of the many independent temple servers you can use to participate in the fediverse.</div>
+          <div id="elephant"></div>
+          <div id="gmbh">the original server of temple, operated by temple GmbH for the common good.</div>
+          <div id="admin_server">
+            <div>
+              <div id="administered_by" class="bold">administered by:</div>
+              <div id="about_server">
+                <div id="temple_logo"></div>
+                <div><span class="bold">temple</span><br>@temple</div>
+              </div>
+            </div>
+            <div id="server_stats" class="bold">
+              <div>server stats:</div>
+              <div>265K<br>active users</div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div><span class="bold">temple.social</span>:about•status•profiles directory•privacy policy•terms of service</div>
+          <div><span class="bold">temple</span>:about•get the app•keyboard shortcuts•view source code</div>
+        </div>
+      </div>
+      <div id="middle">
+        <div id="back"><span class="material-symbols-rounded">arrow_back</span>back</div>
+        <div id="rest">
+          <div id="profile">
+            <div id="banner"></div>
+            <div id="foreground">
+              <div id="pfprow">
+                <div id="pfp"></div>
+              </div>
+              <div id="account">
+                <div id="mypage">
+                  <div id="details">
+                    <div class="name">hooter</div>
+                    <div id="hooter_temple_social">@hooter@temple.social</div>
+                  </div>
+                  <div id="follow_etc">
+                    <div id="follow" class="bold">follow</div>
+                    <div id="copy_link"><span class="material-symbols-rounded">more_horiz</span></div>
+                  </div>
+                </div>
+                <div id="stats">
+                  <div class="stat">
+                    <div>followers</div>
+                    <div class="bold">0</div>
+                  </div>
+                  <div class="stat">
+                    <div>following</div>
+                    <div class="bold">1</div>
+                  </div>
+                  <div class="stat">
+                    <div>posts</div>
+                    <div class="bold">2</div>
+                  </div>
+                  <div class="stat">
+                    <div>joined</div>
+                    <div class="bold">2026</div>
+                  </div>
+                </div>
+              </div>
+              <div id="bio">
+                <div id="msg">The unofficial hooter account. We deliver the best education around.</div>
+                <div id="links">
+                  <div class="cell">
+                    <div class="title">home<span class="material-symbols-rounded">verified</span></div>
+                    <div class="url">example.com</div>
+                  </div>
+                  <div class="cell">
+                    <div class="title">github<span class="material-symbols-rounded">verified</span></div>
+                    <div class="url">example.com</div>
+                  </div>
+                  <div class="cell">
+                    <div class="title">blog<span class="material-symbols-rounded">verified</span></div>
+                    <div class="url">example.com</div>
+                  </div>
+                  <div class="cell">
+                    <div class="title">discord</div>
+                    <div class="url">example.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" id="tab1" name="tabs" checked>
+          <input type="radio" id="tab2" name="tabs">
+          <input type="radio" id="tab3" name="tabs">
+          <div id="labels" class="bold">
+            <label for="tab1">activity</label>
+            <label for="tab2">media</label>
+            <label for="tab3">featured</label>
+          </div>
+          <div id="panes">
+            <div class="pane">
+              <div id="dropdown">
+                <input type="checkbox" id="check">
+                <label for="check" id="toggle">
+                  <span id="posts">posts</span>
+                  <span id="posts_and_replies">posts and replies</span>
+                  <span id="posts_and_boosts">posts and boosts</span>
+                  <span id="posts_and_replies_and_boosts">all activity</span>
+                  <span class="material-symbols-rounded">arrow_drop_down</span>
+                </label>
+                <div id="menu">
+                  <label class="item">
+                    <input type="checkbox" name="filter" id="boosts" value="boosts">
+                    show boosts
+                  </label>
+                  <label class="item">
+                    <input type="checkbox" name="filter" id="replies" value="replies">
+                    show replies
+                  </label>
+                </div>
+              </div>
+              <div id="post">
+                <div id="metadata">
+                  <div id="user">
+                    <div id="icon"></div>
+                    <div id="userinfo">
+                      <div class="name">hooter</div>
+                      <div id="username">@hooter</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="status"><span class="material-symbols-rounded">keep</span>pinned</div>
+                    <div id="posted"><span class="material-symbols-rounded">globe</span>10/31</div>
+                  </div>
+                </div>
+                <div id="content">happy halloween</div>
+                <div id="image">
+                  <input type="checkbox" id="blackout">
+                  <label for="blackout" id="hide">hide</label>
+                  <label for="blackout" id="pic"></label>
+                </div>
+                <div id="actions">
+                  <button popovertarget="popover" id="reply"><span class="material-symbols-rounded">reply</span>0</button>
+                  <button popovertarget="popover" id="reposts"><span class="material-symbols-rounded">repeat</span>0</button>
+                  <button popovertarget="popover" id="stars"><span class="material-symbols-rounded">kid_star</span>0</button>
+                  <button popovertarget="popover" id="bookmark"><span class="material-symbols-rounded">bookmark</span></button>
+                  <button popovertarget="popover" id="misc"><span class="material-symbols-rounded">more_horiz</span></button>
+                  <div id="popover" popover>login
+                    <div id="enter_username">
+                      <div id="input_field">e.g. username@temple.social</div>
+                      <div id="go">go</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pane"></div>
+            <div class="pane"></div>
+           </div>
+        </div>
+      </div>
+      <div id="right">
+        <div></div>
+        <div>
+          <div></div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
